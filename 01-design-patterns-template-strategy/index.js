@@ -4,13 +4,13 @@ import CidadesTXTReport from './src/CidadesTXTReporter.js';
 
 // Factory Method
 class ReporterFactory {
-  static createReporter(type) {
+  static criarReporter(type) {
     if (type === 'html') {
       return new CidadesHTMLReportAdapter();
     } else if (type === 'txt') {
       return new CidadesTXTReportAdapter();
     } else {
-      throw new Error('Formato não suportado');
+      throw new Error('Esse formato não é válido!');
     }
   }
 }
