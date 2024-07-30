@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 
-export default class CidadesTXTReporter {
+export default class CidadesTXTReport {
 
   ler (caminho) {
     this.cidades = fs.readFileSync(caminho);
